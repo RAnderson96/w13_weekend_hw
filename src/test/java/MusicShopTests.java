@@ -61,17 +61,6 @@ public class MusicShopTests {
         assertEquals(135+135+270+270+5, musicShop.getPotentialProfits(),0.01);
     }
 
-    @Test
-    public void canFindItemFromLargeArray(){
-        ArrayList<Product> stock2;
-        stock2 = new ArrayList<>();
-        for (int i = 0; i < 100; i++ ){
-            if(i ==70){
-                stock2.add(sheetMusicToSell);
-            }
-            stock2.add(guitarToSell);
-        }
-        musicShop.setStock(stock2);
-    }
+
 
 }
